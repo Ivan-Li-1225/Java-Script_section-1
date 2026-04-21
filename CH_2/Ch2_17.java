@@ -8,11 +8,18 @@ public class Ch2_17 {
         int score = sc.nextInt();
 
         if (score >= 60) {
-            System.out.println("及格");
+            if (score >= 80) {
+                System.out.println("很好");
+            } else {
+                System.out.println("及格");
+            }
         } else {
-            System.out.println("不及格");
-        }
-
-        sc.close();
+            if (score >= 40) {
+                System.out.println("補考");
+            } else {
+                System.out.println("不及格");
+            }
+        }   
     }
 }
+
